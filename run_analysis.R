@@ -12,7 +12,7 @@ library(dplyr)
 
 if (!file.exists("./data")) {dir.create("./data")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileUrl, destfile = "./data/projectData_getCleanData.zip")
+download.file(fileUrl, destfile = "./data/getdata_projectfiles_UCI HAR Dataset")
 
 zip <- unzip("./data/projectData_getCleanData.zip", exdir = "./data")
 
@@ -28,7 +28,7 @@ str(features)
 features <- transpose(features)  #transpose for later use
 
 # Look at the data in more detail--within training and test data sets, there are 7532 
-# observations and 561 activity instances:
+# observations and 561 activity instances
 str(train_X)
 str(train_y)
 str(train_subject)
