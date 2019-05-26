@@ -10,25 +10,22 @@ The goal of this project is to test our ability to acquire and clean data sets t
 It will be graded on the following criteria:
   1. The submitted data set is tidy
   2. The Github repo contains the required scripts
-  3. Github contains a code book that modifies and updates the available codebooks with the data to indicate all the
-     variables and summaries calculated, along with units, and other relevant information
+  3. Github contains a code book that modifies and updates the available codebooks with the data to indicate all the variables and summaries calculated, along with units, and other relevant information
   4. The work submitted is the work of the student who submitted it
 
-##Creating the tidyData file
-  Step 0: Load necessary data files into R, including X_train, y_train, subject_train, X_test, y_test, and subject_test
-  Step 1: Merge the training and test files to generate an 10299-by-2 dimension data frame
-  Step 2: Per instructions, extract only the mean and standard deviation for each measurement (180-by-6 dimension)
-  Step 3: According to the activity_labels, subject_train, and subject_test.txt files, re-name the respective columns for
-          subject ID and activity type
-  Step 4: Based on the features.txt file, label the remaining columns using descriptive variable names
-  Step 5: Leveraging the merged and cleaned data set, create another independent tidy data set with the average of each
-          variable for each activity and each subject
+## Creating the tidyData file
+### Step 0: Load necessary data files into R, including X_train, y_train, subject_train, X_test, y_test, and subject_test
+### Step 1: Merge the training and test files to generate an 10299-by-2 dimension data frame
+### Step 2: Per instructions, extract only the mean and standard deviation for each measurement (180-by-6 dimension)
+### Step 3: According to the activity_labels, subject_train, and subject_test.txt files, re-name the respective columns for subject ID and activity type
+### Step 4: Based on the features.txt file, label the remaining columns using descriptive variable names
+### Step 5: Leveraging the merged and cleaned data set, create another independent tidy data set with the average of each variable for each activity and each subject
 
-##Description of the identifier variables
+## Description of the identifier variables
 * Subject   -    ID number of the individual, between 1 and 30
 * Activity  -   Type of activity, between 1 and 6
 
-##Description of the measurement variables
+## Description of the measurement variables
 Among the list of 561 vector variables that were collected in the study, we will assume that the mean and standard deviation
 for the following variables below are sufficient:
 
@@ -57,7 +54,7 @@ NOTE: By assumption, the mean and standard deviation of the following variables 
 * tBodyGyroMean
 * tBodyGyroJerkMean
 
-##Description of the activity labels
+## Description of the activity labels
 
 * 1 Walking
 * 2 Walking_Upstairs
@@ -66,5 +63,5 @@ NOTE: By assumption, the mean and standard deviation of the following variables 
 * 5 Standing
 * 6 Laying
 
-##Link to database
+## Link to database
 http://archive.ics.uci.edu/ml/machine-learning-databases/00240/
