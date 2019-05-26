@@ -15,12 +15,12 @@ It will be graded on the following criteria:
 
 ## Creating the tidyData file
 
-> Step 0: Load necessary data files into R, including X_train, y_train, subject_train, X_test, y_test, and subject_test
-> Step 1: Merge the training and test files to generate an 10299-by-2 dimension data frame
-> Step 2: Per instructions, extract only the mean and standard deviation for each measurement (180-by-6 dimension)
-> Step 3: According to the activity_labels, subject_train, and subject_test.txt files, re-name the respective columns for subject ID and activity type
-> Step 4: Based on the features.txt file, label the remaining columns using descriptive variable names
-> Step 5: Leveraging the merged and cleaned data set, create another independent tidy data set with the average of each variable for each activity and each subject
+1. Load necessary data files into R, including X_train, y_train, subject_train, X_test, y_test, and subject_test
+2. Merge the training and test files to generate an 10299-by-2 dimension data frame
+3. Per instructions, extract only the mean and standard deviation for each measurement (180-by-6 dimension)
+4. According to the activity_labels, subject_train, and subject_test.txt files, re-name the respective columns for subject ID and activity type
+5. Based on the features.txt file, label the remaining columns using descriptive variable names
+6. Leveraging the merged and cleaned data set, create another independent tidy data set with the average of each variable for each activity and each subject
 
 ## Description of the identifier variables
 * Subject   -    ID number of the individual, between 1 and 30
@@ -48,7 +48,7 @@ for the following variables below are sufficient:
 * fBodyGyroMag
 * fBodyGyroJerkMag
 
-*NOTE: By assumption, the mean and standard deviation of the following variables were not extracted:*
+*NOTE:* By assumption, the mean and standard deviation of the following variables were not extracted:
 * gravityMean
 * tBodyAccMean
 * tBodyAccJerkMean
@@ -65,4 +65,4 @@ for the following variables below are sufficient:
 * 6 Laying
 
 ## Link to database
-[http://archive.ics.uci.edu/ml/machine-learning-databases/00240/]
+http://archive.ics.uci.edu/ml/machine-learning-databases/00240/
